@@ -4,4 +4,24 @@
   <artifactId>bootjobs-maven-hibernate</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+  
+    <dependencies>
+  
+  <!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl-api -->
+<dependency>
+    <groupId>javax.servlet.jsp.jstl</groupId>
+    <artifactId>jstl-api</artifactId>
+    <version>1.2</version>
+</dependency>
+  
+  
+  </dependencies>
+  
+  <properties>  
+  
+    <failOnMissingWebXml>false</failOnMissingWebXml>
+   </properties>
+  
+  
+  
 </project>
