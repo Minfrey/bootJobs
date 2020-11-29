@@ -4,4 +4,12 @@
   <artifactId>bootjobs-hibernate-maven</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+
+
+
+    <properties>
+        <!-- Skip artifact deployment -->
+        <maven.deploy.skip>true</maven.deploy.skip>
+    </properties>
+  
 </project>
