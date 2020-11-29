@@ -2,12 +2,18 @@ package it.bootjobs.model;
 
 import java.sql.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 import org.hibernate.annotations.GenericGenerator;
 
+@Entity
+@Table(name = "")
 
 public class Annuncio {
 
@@ -37,8 +43,9 @@ public class Annuncio {
 	}
 
 	@Id
-	@GeneratedValue(generator="increment")
-	@GenericGenerator(name="increment", strategy = "increment")
+	@GeneratedValue(generator = "increment")
+	@GenericGenerator(name = "increment", strategy = "increment")
+	@Column(name = "")
 	public int getId() {
 		return id;
 	}
@@ -47,6 +54,7 @@ public class Annuncio {
 		this.id = id;
 	}
 
+	@Column(name = "")
 	public int getId_societa() {
 		return id_societa;
 	}
@@ -55,6 +63,7 @@ public class Annuncio {
 		this.id_societa = id_societa;
 	}
 
+	@Column(name = "")
 	public String getNome_annuncio() {
 		return nome_annuncio;
 	}
@@ -63,6 +72,7 @@ public class Annuncio {
 		this.nome_annuncio = nome_annuncio;
 	}
 
+	@Column(name = "")
 	public String getTitolo_di_studio() {
 		return titolo_di_studio;
 	}
@@ -71,6 +81,7 @@ public class Annuncio {
 		this.titolo_di_studio = titolo_di_studio;
 	}
 
+	@Column(name = "")
 	public String getTipo_contratto() {
 		return tipo_contratto;
 	}
@@ -79,6 +90,7 @@ public class Annuncio {
 		this.tipo_contratto = tipo_contratto;
 	}
 
+	@Column(name = "")
 	public String getDescrizione() {
 		return descrizione;
 	}
@@ -87,6 +99,7 @@ public class Annuncio {
 		this.descrizione = descrizione;
 	}
 
+	@Column(name = "")
 	public String getCategoria() {
 		return categoria;
 	}
@@ -95,6 +108,7 @@ public class Annuncio {
 		this.categoria = categoria;
 	}
 
+	@Column(name = "")
 	public String getSottocategoria() {
 		return sottocategoria;
 	}
@@ -103,6 +117,7 @@ public class Annuncio {
 		this.sottocategoria = sottocategoria;
 	}
 
+	@Column(name = "")
 	public Double getStipendio() {
 		return stipendio;
 	}
@@ -111,6 +126,8 @@ public class Annuncio {
 		this.stipendio = stipendio;
 	}
 
+	@Temporal(TemporalType.TIMESTAMP)
+	@Column(name = "")
 	public Date getData_pubblicazione() {
 		return data_pubblicazione;
 	}

@@ -1,5 +1,11 @@
 package it.bootjobs.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "")
 public class Territorio {
 
 	private String nome;
@@ -14,6 +20,7 @@ public class Territorio {
 		this.nome = nome;
 	}
 
+	@Column(name = "")
 	public String getNome() {
 		return nome;
 	}
